@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:id="@+id/scrollView"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/admin"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        app:cardElevation="15dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/organization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_organization" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Organization"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        app:cardElevation="15dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/restaurant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_restaurant" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Restaurant"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLine" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/user"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        app:cardElevation="15dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/donation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_transfer_within_a_station_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Transactions"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        app:cardElevation="15dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_sentiment_very_satisfied_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="User"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLine" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/admin1"
+                    android:visibility="invisible"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardElevation="15dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/deliveryBoy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_delivery" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Delivery Boy"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        app:cardElevation="15dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/Tracking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/ic_city" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Tracking"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLine" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    <data>
+
+    </data>
+</layout>
